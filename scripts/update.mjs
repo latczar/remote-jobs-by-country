@@ -18,11 +18,26 @@ import {
 const SOURCE = 'https://remotejobify.app/reports/where-remote-jobs-are-open.csv';
 const HISTORY = 'data/history.csv';
 
-// A new address each hour, so the site's cached copy never answers for today's file.
-const url = `${SOURCE}?fresh=${new Date().toISOString().slice(0, 13)}`;
-const response = await fetch(url, { headers: { 'User-Agent': 'remote-jobs-by-country-updater' } });
-if (!response.ok) throw new Error(`${SOURCE} answered ${response.status}.`);
-const rows = parseTable(await response.text());
+/** Today's rows. Three tries a minute apart, as the site sometimes answers "try later". */
+async function read() {
+  for (let attempt = 1; ; attempt++) {
+    // A new address each try, so the site's cached copy never answers for today's file.
+    const url = `${SOURCE}?fresh=${Date.now()}`;
+    try {
+      const response = await fetch(url, {
+        headers: { 'User-Agent': 'remote-jobs-by-country-updater' },
+      });
+      if (!response.ok) throw new Error(`${SOURCE} answered ${response.status}.`);
+      return parseTable(await response.text());
+    } catch (error) {
+      if (attempt === 3) throw error;
+      console.log(`Try ${attempt} failed (${error.message}); trying again in a minute.`);
+      await new Promise((resolve) => setTimeout(resolve, 60_000));
+    }
+  }
+}
+
+const rows = await read();
 const day = checkTable(rows);
 
 await mkdir('data', { recursive: true });
