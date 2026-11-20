@@ -1,0 +1,39 @@
+name: Update the data
+
+on:
+  schedule:
+    # Remotejobify's crawl starts at 00:17 UTC and takes about an hour and a half.
+    - cron: '40 3 * * *'
+    # A second try, for a late or failed crawl. A run on the same day replaces that day's rows.
+    - cron: '40 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node --test scripts/
+      - run: node scripts/update.mjs
+      - name: Save any change
+        run: |
+          git add data README.md
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Numbers for $(date -u +%Y-%m-%d)"
+          git push
