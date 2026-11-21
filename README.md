@@ -7,37 +7,37 @@ Made by [Remotejobify](https://remotejobify.app/). The same table, with links to
 ## Today's numbers
 
 <!-- numbers:start -->
-On 20 November 2026, 29,043 remote jobs were open to people in the US (48.9% of all the remote jobs we list), 4,454 to people in the UK (7.5%) and 3,888 to people in Germany (6.5%). Remote jobs were open to people in 236 countries in all.
+On 21 November 2026, 29,058 remote jobs were open to people in the US (49.0% of all the remote jobs we list), 4,455 to people in the UK (7.5%) and 3,889 to people in Germany (6.6%). Remote jobs were open to people in 236 countries in all.
 
 | Country | Remote jobs open | Share of all remote jobs | Open to anyone, anywhere | Change on a week ago |
 | --- | ---: | ---: | ---: | --- |
-| United States | 29,043 | 48.9% | 1.7% | not yet |
-| Canada | 4,561 | 7.7% | 10.6% | not yet |
-| United Kingdom | 4,454 | 7.5% | 10.8% | not yet |
-| Germany | 3,888 | 6.5% | 12.4% | not yet |
-| Philippines | 3,757 | 6.3% | 12.9% | not yet |
-| Poland | 2,935 | 4.9% | 16.5% | not yet |
-| Spain | 2,758 | 4.6% | 17.5% | not yet |
-| France | 2,489 | 4.2% | 19.4% | not yet |
-| Netherlands | 2,382 | 4.0% | 20.3% | not yet |
-| India | 2,322 | 3.9% | 20.8% | not yet |
-| Mexico | 2,252 | 3.8% | 21.4% | not yet |
-| Portugal | 2,215 | 3.7% | 21.8% | not yet |
-| Brazil | 2,212 | 3.7% | 21.8% | not yet |
-| Colombia | 2,187 | 3.7% | 22.1% | not yet |
-| Romania | 2,143 | 3.6% | 22.5% | not yet |
-| Argentina | 2,138 | 3.6% | 22.6% | not yet |
-| Ireland | 2,112 | 3.6% | 22.9% | not yet |
-| Italy | 2,068 | 3.5% | 23.4% | not yet |
-| Bulgaria | 1,945 | 3.3% | 24.8% | not yet |
-| Ukraine | 1,945 | 3.3% | 24.8% | not yet |
-| Czechia | 1,939 | 3.3% | 24.9% | not yet |
-| Hungary | 1,901 | 3.2% | 25.4% | not yet |
-| Sweden | 1,872 | 3.2% | 25.8% | not yet |
-| Lithuania | 1,857 | 3.1% | 26.0% | not yet |
-| Estonia | 1,847 | 3.1% | 26.2% | not yet |
+| United States | 29,058 | 49.0% | 1.7% | not yet |
+| Canada | 4,556 | 7.7% | 10.6% | not yet |
+| United Kingdom | 4,455 | 7.5% | 10.9% | not yet |
+| Germany | 3,889 | 6.6% | 12.5% | not yet |
+| Philippines | 3,741 | 6.3% | 13.0% | not yet |
+| Poland | 2,903 | 4.9% | 16.7% | not yet |
+| Spain | 2,738 | 4.6% | 17.7% | not yet |
+| France | 2,504 | 4.2% | 19.4% | not yet |
+| Netherlands | 2,373 | 4.0% | 20.4% | not yet |
+| India | 2,337 | 3.9% | 20.8% | not yet |
+| Mexico | 2,271 | 3.8% | 21.4% | not yet |
+| Brazil | 2,234 | 3.8% | 21.7% | not yet |
+| Colombia | 2,207 | 3.7% | 22.0% | not yet |
+| Portugal | 2,200 | 3.7% | 22.0% | not yet |
+| Argentina | 2,160 | 3.6% | 22.5% | not yet |
+| Romania | 2,134 | 3.6% | 22.7% | not yet |
+| Ireland | 2,113 | 3.6% | 23.0% | not yet |
+| Italy | 2,080 | 3.5% | 23.3% | not yet |
+| Ukraine | 1,956 | 3.3% | 24.8% | not yet |
+| Bulgaria | 1,946 | 3.3% | 24.9% | not yet |
+| Czechia | 1,942 | 3.3% | 25.0% | not yet |
+| Hungary | 1,886 | 3.2% | 25.7% | not yet |
+| Sweden | 1,873 | 3.2% | 25.9% | not yet |
+| Lithuania | 1,851 | 3.1% | 26.2% | not yet |
+| Estonia | 1,850 | 3.1% | 26.2% | not yet |
 
-Every country is in [data/latest.csv](data/latest.csv). [data/history.csv](data/history.csv) has this first day.
+Every country is in [data/latest.csv](data/latest.csv). [data/history.csv](data/history.csv) has all 2 days since 20 November 2026.
 <!-- numbers:end -->
 
 ## The files
